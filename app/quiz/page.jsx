@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div>Quiz App</div>
+    <div>Quiz Page</div>
   )
 }
 
