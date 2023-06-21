@@ -3,9 +3,9 @@ export const quiz = {
     questions: [
       {
         id: 1,
-        question: 'What is the capital of France?',
-        answers: ['Madrid', 'Paris', 'Rome', 'Berlin'],
-        correctAnswer: 'Paris',
+        question: 'What is the capital of Kenya?',
+        answers: ['Nairobi', 'Kericho', 'Eldoret', 'Mombasa'],
+        correctAnswer: 'Nairobi',
       },
       {
         id: 2,
