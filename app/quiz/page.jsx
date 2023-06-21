@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { quiz } from "../data.js";
 
 function page() {
-  const [activeQuestion, setActveQuestion] = useState(0);
+  const [activeQuestion, setActiveQuestion ] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
@@ -53,9 +53,8 @@ function page() {
       setShowResult(true);
     }
     setChecked(false);
-   
-
   };
+   
 
   return (
     <div className="container">
