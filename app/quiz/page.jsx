@@ -28,6 +28,31 @@ function page() {
   };
 
   // calculate score and increment to next question
+  const nextQuestion = () {
+    setSelectedAnswerIndex(null);
+    setResult((prev) =>
+    selectedAnswer 
+    ? {
+      ...prev,
+      score: prev.score + 5,
+      correctAnswers: prev.correctAnswers + 1,
+
+    }
+    : {
+      ...prev,
+      wrongAnswers: prev.wrongAnswers + 1,
+    }
+    );
+    if ( activeQuestion !== questions.length -1) {
+      setActveQuestion((prev) => prev +1);
+
+    }else{
+      setActveQuestion(0);
+      setShowResult(true);
+    }
+    setChecked(false);
+
+  };
 
   return (
     <div className="container">
